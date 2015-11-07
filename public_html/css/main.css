@@ -1,0 +1,22 @@
+/*
+Copyright © 2015 Ming Tsay. All rights reserved.
+*/
+* {
+    font-family: sans-serif;
+}
+
+header.frame, main.frame, footer.frame {
+    margin: 0 8px;
+}
+
+header.frame {
+    margin-top: 8px;
+}
+
+footer.frame {
+    margin-bottom: 8px;
+}
+
+header.frame h1 {
+    margin: .67em 0;
+}

@@ -1,5 +1,5 @@
-<!--#include file="meta.inc.html"-->
+<!--#include file="/meta.inc.html"-->
         <title>首頁 - mt's Website</title>
-<!--#include file="header.inc.html"-->
-        <div>網站建置中，敬請期待！</div>
-<!--#include file="footer.inc.html"-->
+<!--#include file="/header.inc.html"-->
+            <div>網站建置中，敬請期待！</div>
+<!--#include file="/footer.inc.html"-->
