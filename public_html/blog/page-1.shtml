@@ -1,0 +1,47 @@
+<!--#include file="/blog/meta.inc.html"-->
+        <title>小喵の網誌 - mt's Website</title>
+        <meta name="description" content="小喵の網誌" />
+<!--#include file="/blog/header.inc.html"-->
+                <div class="col-md-8 article-list">
+                    <h1 class="page-header">
+                        小喵の網誌
+                        <small>mt's Website</small>
+                    </h1>
+
+                    <h2><a href="%e5%8d%87%e7%b4%9a-os-x-yosemite-%e5%be%8c-zsh-%e7%99%bc%e7%94%9f%e9%8c%af%e8%aa%a4%e7%9a%84%e8%a7%a3%e6%b1%ba%e6%96%b9%e6%b3%95.shtml">升級 OS X Yosemite 後 zsh 發生錯誤的解決方法</a></h2>
+                    <time datetime="2014-10-18 02:33:28"><span class="glyphicon glyphicon-time"></span> 於 2014-10-18 02:33:28 發佈</time>
+                    <hr />
+                    <p>小喵在今天升級成 OS X Yosemite 之後，打開 iTerm 發現自己的 zsh 壞了！</p>
+                    <a class="btn btn-primary" href="%e5%8d%87%e7%b4%9a-os-x-yosemite-%e5%be%8c-zsh-%e7%99%bc%e7%94%9f%e9%8c%af%e8%aa%a4%e7%9a%84%e8%a7%a3%e6%b1%ba%e6%96%b9%e6%b3%95.shtml#more">繼續閱讀 <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                    <hr />
+
+                    <h2><a href="%e5%a6%82%e4%bd%95%e9%81%bf%e5%85%8d-raspberrypi-%e4%b8%80%e6%ae%b5%e6%99%82%e9%96%93%e5%be%8c%e8%9e%a2%e5%b9%95%e8%ae%8a%e9%bb%91.shtml">如何避免 RaspberryPi 一段時間後螢幕變黑</a></h2>
+                    <time datetime="2014-07-25 04:17:04"><span class="glyphicon glyphicon-time"></span> 於 2014-07-25 04:17:04 發佈</time>
+                    <hr />
+                    <p>最近買了一台 RaspberryPi Model B+ 回家，接上電視後就想到了這個問題，於是 Google 了一下找到這問題的解法，解法如下：</p>
+                    <a class="btn btn-primary" href="%e5%a6%82%e4%bd%95%e9%81%bf%e5%85%8d-raspberrypi-%e4%b8%80%e6%ae%b5%e6%99%82%e9%96%93%e5%be%8c%e8%9e%a2%e5%b9%95%e8%ae%8a%e9%bb%91.shtml#more">繼續閱讀 <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                    <hr />
+
+                    <h2><a href="%e9%a1%8c%e7%9b%aea-%e6%8c%91%e9%a3%9f%e7%9a%84%e5%a4%a7%e8%83%83%e7%8e%8b.shtml">題目A-挑食的大胃王</a></h2>
+                    <time datetime="2013-11-23 13:59:37"><span class="glyphicon glyphicon-time"></span> 於 2013-11-23 13:59:37 發佈</time>
+                    <hr />
+                    <p>這題是說阿力看到不喜歡吃的東西會把那個東西以及他的上下左右都挖掉 3 cm 的高度，也就是說我們只要把阿力標示為 1 的部分以及其上下左右都先標示成會被挖掉的狀態，然後再把總共的便當體積去扣掉那些被標示為會被挖掉的體積就可以了。以下是我的程式碼：</p>
+                    <a class="btn btn-primary" href="%e9%a1%8c%e7%9b%aea-%e6%8c%91%e9%a3%9f%e7%9a%84%e5%a4%a7%e8%83%83%e7%8e%8b.shtml#more">繼續閱讀 <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                    <hr />
+
+                    <ul class="pager">
+                        <li class="previous">
+                            <a href="page-1.shtml">&larr; 上一頁</a>
+                        </li>
+                        <li class="active">
+                            <a href="page-1.shtml">1</a>
+                        </li>
+                        <li class="next">
+                            <a href="page-1.shtml">下一頁 &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+<!--#include file="/blog/footer.inc.html"-->

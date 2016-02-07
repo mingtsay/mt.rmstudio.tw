@@ -1,0 +1,62 @@
+body {
+    padding-top: 70px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.blog-latest-post li {
+    border-top: 1px solid #ccc;
+    clear: both;
+    padding: 8px;
+}
+
+.blog-latest-post a {
+    display: block;
+    text-align: left;
+}
+
+.article time,
+.article-list time,
+.blog-latest-post time {
+    display: block;
+    text-align: right;
+    padding-top: 5px;
+}
+
+.article time {
+    margin-bottom: 16px;
+}
+
+.article p,
+.article code {
+    margin: 16px 0;
+}
+
+.article img {
+    max-width: 100%;
+}
+
+a.article-link {
+    color: #ccc;
+}
+a.article-link:hover {
+    color: #66c;
+}
+
+.pager .active a {
+    background-color: #daeeff;
+}
+.pager .active a:hover {
+    background-color: #f4faff;
+}
+
+.prettyprint li.L0:hover, .prettyprint li.L1:hover,
+.prettyprint li.L2:hover, .prettyprint li.L3:hover,
+.prettyprint li.L4:hover, .prettyprint li.L5:hover,
+.prettyprint li.L6:hover, .prettyprint li.L7:hover,
+.prettyprint li.L8:hover, .prettyprint li.L9:hover {
+    color: #66c;
+    list-style-type: decimal !important;
+}

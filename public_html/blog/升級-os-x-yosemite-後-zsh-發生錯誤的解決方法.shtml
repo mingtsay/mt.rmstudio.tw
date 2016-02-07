@@ -1,0 +1,38 @@
+<!--#include file="/blog/meta.inc.html"-->
+        <title>升級 OS X Yosemite 後 zsh 發生錯誤的解決方法 - 小喵の網誌 - mt's Website</title>
+        <meta name="description" content="小喵在今天升級成 OS X Yosemite 之後，打開 iTerm 發現自己的 zsh 壞了！以下為錯誤訊息：dyld: Library not loaded: /usr/local/lib/libgdbm.4.dylib Referenced from: /usr/local/bin/zsh Reason: image not found zsh: trace trap 接著就想到應該是相依性的套件沒有滿足，所以就下了這個指令：「brew missing」以下是出現的訊息：$ brew missing zsh: gdbm 那麼我們就來裝 gdbm 吧：==> Downloading http://ftpmirror.gnu.org/gdbm/gdbm-1.11.tar.gz ==> ./configure --prefix=/usr/local/Cellar/gdbm/1.11 --mandir=/usr/local/Cellar/ ==> make install /usr/local/Cellar/gdbm/1.11: 17 files, 532K, built in 20 seconds 於是我重開 iTerm 就沒問題了！（升級完也別忘了裝 commandline tools 哦 OwO）實際發生錯誤以及解決的 iTerm 畫面" />
+<!--#include file="/blog/header.inc.html"-->
+                <div class="col-md-8 article">
+                    <h1>
+                        升級 OS X Yosemite 後 zsh 發生錯誤的解決方法
+                        <a href="%e5%8d%87%e7%b4%9a-os-x-yosemite-%e5%be%8c-zsh-%e7%99%bc%e7%94%9f%e9%8c%af%e8%aa%a4%e7%9a%84%e8%a7%a3%e6%b1%ba%e6%96%b9%e6%b3%95.shtml" title="文章網址" class="article-link"><span class="glyphicon glyphicon-link"></span></a>
+                    </h1>
+                    <time datetime="2014-10-18 02:33:28" title="2014-10-18 02:33:28"><span class="glyphicon glyphicon-time"></span> 2014-10-18 02:33:28</time>
+
+                    <p>小喵在今天升級成 OS X Yosemite 之後，打開 iTerm 發現自己的 zsh 壞了！</p>
+                    <p id="more">以下為錯誤訊息：</p>
+                    <pre><code>dyld: Library not loaded: /usr/local/lib/libgdbm.4.dylib
+  Referenced from: /usr/local/bin/zsh
+  Reason: image not found
+zsh: trace trap</code></pre>
+                    <p>接著就想到應該是相依性的套件沒有滿足，所以就下了這個指令：「<code>brew missing</code>」</p>
+                    <p>以下是出現的訊息：</p>
+                    <pre><code>$ brew missing
+zsh: gdbm</code></pre>
+                    <p>那麼我們就來裝 <code>gdbm</code> 吧：</p>
+                    <pre><code>$ brew install gdbm
+==> Downloading http://ftpmirror.gnu.org/gdbm/gdbm-1.11.tar.gz
+######################################################################## 100.0%
+==> ./configure --prefix=/usr/local/Cellar/gdbm/1.11 --mandir=/usr/local/Cellar/
+==> make install
+    /usr/local/Cellar/gdbm/1.11: 17 files, 532K, built in 20 seconds</code></pre>
+                    <p>於是我重開 iTerm 就沒問題了！</p>
+                    <p>（升級完也別忘了裝 commandline tools 哦 OwO）</p>
+                    <p>
+                        <a href="https://images.mt.rmstudio.tw/5441610213cbb0bf.png" data-toggle="lightbox" data-title="iTerm 截圖" data-footer="實際發生錯誤以及解決的 iTerm 畫面">
+                            <img src="https://images.mt.rmstudio.tw/5441610213cbb0bf.png" alt="iTerm 截圖" />
+                        </a>
+                        實際發生錯誤以及解決的 iTerm 畫面
+                    </p>
+                    </div>
+<!--#include file="/blog/footer.inc.html"-->
