@@ -1,0 +1,26 @@
+<!--#include file="/blog/meta.inc.html"-->
+        <title>如何避免 RaspberryPi 一段時間後螢幕變黑 - 小喵の網誌 - mt's Website</title>
+        <meta name="description" content="最近買了一台 RaspberryPi Model B+ 回家，接上電視後就想到了這個問題，於是 Google 了一下找到這問題的解法，解法如下：首先用編輯器打開「/etc/kbd/config」設定檔：sudo vim /etc/kbd/config 接著找到 BLANK_TIME （第 41 行）和 POWERDOWN_TIME（第 60 行）並改成 0 ：BLANK_TIME=0 # 原本是 30 POWERDOWN_TIME=0 # 原本是 30 存檔後可以重新啟動服務，或是直接重新開機也可以：重新啟動服務：sudo service kbd restart 重新開機 sudo reboot 已測試放了一天都不會變黑哦w" />
+<!--#include file="/blog/header.inc.html"-->
+                <div class="col-md-8 article">
+                    <h1>
+                        如何避免 RaspberryPi 一段時間後螢幕變黑
+                        <a href="%e5%a6%82%e4%bd%95%e9%81%bf%e5%85%8d-raspberrypi-%e4%b8%80%e6%ae%b5%e6%99%82%e9%96%93%e5%be%8c%e8%9e%a2%e5%b9%95%e8%ae%8a%e9%bb%91.shtml" title="文章網址" class="article-link"><span class="glyphicon glyphicon-link"></span></a>
+                    </h1>
+                    <time datetime="2014-07-25 04:17:04" title="2014-07-25 04:17:04"><span class="glyphicon glyphicon-time"></span> 2014-07-25 04:17:04</time>
+
+                    <p>最近買了一台 RaspberryPi Model B+ 回家，接上電視後就想到了這個問題，於是 Google 了一下找到這問題的解法，解法如下：</p>
+                    <p id="more">首先用編輯器打開「/etc/kbd/config」設定檔：</p>
+                    <code>$ sudo vim /etc/kbd/config</code>
+                    <p>接著找到 BLANK_TIME （第 41 行）和 POWERDOWN_TIME（第 60 行）並改成 0 ：</p>
+                    <code>BLANK_TIME=0 # 原本是 30<br />
+                    POWERDOWN_TIME=0 # 原本是 30</code>
+                    <p>存檔後可以重新啟動服務，或是直接重新開機也可以：</p>
+                    <code>重新啟動服務：<br />
+                    $ sudo service kbd restart<br />
+                    重新開機<br />
+                    $ sudo reboot</code>
+                    <p>已測試放了一天都不會變黑哦w</p>
+                    <p>參考資料：<a href="http://www.raspberrypi.org/forums/viewtopic.php?f=66&amp;t=18200" target="_blank" rel="nofollow" onclick="gas('文章外連','參考資料','Raspberry Pi • View topic – How to disable screen blanking')">Raspberry Pi &bull; View topic - How to disable screen blanking</a></p>
+                </div>
+<!--#include file="/blog/footer.inc.html"-->
